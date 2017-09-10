@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+
+<html>
+
+    <head>
+    
+        <meta charset="utf-8">
+        <title>SoftBits</title>
+    </head>
+        <style>
+                
+            *{
+                margin: 0;
+            }
+                
+            .head {
+                background-color: rgb(0,200,255);
+                width: 100%;
+                height: 500px;
+            }
+            
+            nav {
+                width: 100%;
+                height: 50px;
+                background-color: rgb(0,255,200);
+            }
+            nav ul li {
+                display: inline-block;
+                list-style: none;
+            }
+            
+            section {
+                width: 100%;
+                height: 500px;
+            }
+            
+            .flex {
+                display: flex;
+                height: 400px;
+                margin: 100px 50px;
+            }
+            
+            #d1 {
+                background-color: royalblue;
+                flex: 1;
+            }
+            #d2 {
+                background-color: goldenrod;
+                flex: 1;
+            }
+            #d3 {
+                background-color: palegreen;
+                flex: 1;
+            }
+            .line{
+                flex: .05;
+                background-color: silver;
+            }
+            .frontH{
+                text-align: center;
+                position: relative;
+                top: 50px;
+                color: white;
+                text-shadow: 2px 2px 2px rgba(0,0,0,.5);
+            }
+            
+            .frontIm {
+                
+                width: 200px;
+                height: 200px;
+                position: relative;
+                top: 75px;
+                left: 20%;
+            }
+            
+            .btn {
+                width: 150px;
+                height: 50px;
+                border: 5px solid indigo;
+                border-radius: 10px;
+                text-align: center;
+                position: relative;
+                left: 30%;
+                top: 25%;
+                box-shadow: 2px 2px 2px rgba(0,0,0,.5);
+                }
+            .btn a {
+                color: black;
+                text-decoration: none;
+                display: block;
+                width: inherit;
+                height: 40px;
+                padding-top: 15px;
+            }
+            .btn a:hover {
+                color: white;
+            }
+            .btn:hover {
+                background-color: indigo;
+                box-shadow: none;
+            }
+            
+            footer {
+                width: 100%;
+                height: 300px;
+                background-color:dimgray;
+                position: relative;
+                z-index: -1;
+                overflow: hidden;
+            }
+    
+    
+    </style>
+
+    <body>
+        
+        <header>
+            <nav>
+                <ul>
+                    
+                <li>Link 1</li>
+                <li>Link 2</li>
+                <li>Link 3</li>
+                <li>Link 4</li>
+                </ul>
+            
+            </nav>
+            
+            <div class="head">
+             </div>
+            
+        </header>
+        
+        <section>
+            
+            <div class="flex">
+                <div id="d1"><h2 class="frontH">Hola Mundo</h2><img class="frontIm" placeholder="placeholder"><div class="btn" type="button"><a href="test.html"><p>Click Me!!</p></a></div></div>
+            <div class="line"></div>
+                <div id="d2"><h2 class="frontH">Hola Mundo</h2><img class="frontIm" placeholder="placeholder"><div class="btn" type="button"><a href="test2.html"><p>Click Me!!</p></a></div></div>
+            <div class="line"></div>
+            <div id="d3"><h2 class="frontH">Hola Mundo</h2><img class="frontIm" placeholder="placeholder"><div class="btn" type="button"><a href="test3.html"><p>Click Me!!</p></a></div></div>
+            </div>
+            
+        </section>
+        
+        <footer></footer>
+    
+    </body>
+
+
+</html>
