@@ -1,28 +1,109 @@
+
+<style>
+
+    *{
+        margin: 0;
+    }
+    
+    body {
+        background-color: indigo;
+    }
+    
+    .signup {
+        width: 700px;
+        height: 400px;
+        position: absolute;
+        top: 30%;
+        left: 50%;
+        background-color: rgb(225,225,225);
+        transform: translateX(-50%) translateY(-20%);
+        border: 1px solid rgb(220,220,220);
+        padding: 100px 25px;
+        }
+    
+    .signup p{
+        font-family: helvetica;
+        font-size: 20px;
+        display: inline-block;
+    }
+    
+    .signup input{
+        height: 30px;
+        font-family: helvetica;
+        font-size: 15px;
+    }
+    
+    .sigbt {
+        position: inherit;
+        top: 80%;
+        left: 200px;
+        width: 300px;
+        height: 30px;
+        background-color: rgb(41,200,255);
+        border-radius: 5px;
+    }
+    .sigbt a {
+        color: white;
+        display: block;
+        text-align: center;
+        text-decoration: none;
+        font-family: helvetica;
+        font-size: 20px;
+    }
+    
+    .signup img {
+        width: 200px;
+        position: absolute;
+        left: 30%;
+        top: -5%;
+        
+    }
+
+
+</style>
+
+
 <body>
 
-    <form>
-        <p>Full Name</p>
-        <input type="text" name="FirstName" placeholder="First Name">
-        <input type="text" name="LastName" placeholder="Last Name">
-        <p>Home address</p>
-        <input type="text" name="address" placeholder="Street address">
-        <input type="text" name="Apt" placeholder="Apt/Unit">
+    <form class="signup">
+        <img src="bitsBlue.png">
+        
+        <p>Full Name</p><br/>
+        <input type="text" name="FirstName" placeholder="First Name" size="32">
+        <input type="text" name="LastName" placeholder="Last Name" size="32">
+        <br/><br/>
+        <p>Home address</p><br/>
+        <input type="text" name="address" placeholder="Street address" size="64">
+        <input type="text" name="Apt" placeholder="Apt/Unit" size="8">
+        <br/><br/>
         <p>Zip code</p>
-        <input type="number" name="Zipcode" placeholder="00000">
+        <input type="number" name="Zipcode" placeholder="00000" size="8">
         <p>City</p>
-        <input type="text" name="City" placeholder="City">
+        <input type="text" name="City" placeholder="City" size="16">
         <p>Country</p>
         <select name="Select Country">
+            <option>-- Select Country --</option>
+            <option>Bangladesh</option>
+            <option>Canada</option>
+            <option>Chile</option>
+            <option>China</option>
+            <option>Dominican Republic</option>
+            <option>Egypt</option>
+            <option>Jamaica</option>
+            <option>Nigeria</option>
             <option>Puerto Rico</option>
             <option>United States</option>
-            <option>Nigeria</option>
-            <option>Jamaica</option>
-            <option>Egypt</option>
-            <option>Dominican Republic</option>
-            <option>China</option>
-            <option>Bangladesh</option>
         </select>
-    
+        <br/><br/>
+        <p>Email</p><br/>
+            <input type="email" name="Email" placeholder="Email" size="32">
+            <input type="email" name="Email" placeholder="Confirm Email" size="32">
+        <br/><br/>
+        <p>Password</p><br/>
+            <input type="password" name="Password" placeholder="Password" size="32">
+            <input type="password" name="Password" placeholder="Confirm Password" size="32">
+        
+        <div class="sigbt" type="button"><a href="index.html" onclick="alert('You have sucessfully loged in.')"><p>Sign Up</p></a></div>
     </form>
 
 
