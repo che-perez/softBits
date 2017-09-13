@@ -79,6 +79,11 @@
 
 <body>
      <h1 class="greet">Welcome to the Family!</h1>
+    <h1 class="greet">Bienvenido a la Familia!</h1>
+    <h1 class="greet">Bienvenue à la famille!</h1>
+    <h1 class="greet">歡迎來到這個家庭！</h1>
+    <h1 class="greet">اهلا بك في العائلة!</h1>
+    <h1 class="greet">পরিবারে স্বাগতম!</h1>
     <form class="signup">
         <img src="bitsBlue.png">
         
@@ -122,6 +127,30 @@
         
         <div class="sigbt" type="button"><a href="index.html" onclick="alert('You have sucessfully loged in.')"><p>Sign Up</p></a></div>
     </form>
+    
+    <script>
+    
+        var hPos = 0;
+        display();
+        
+        function display() {
+            var x = document.getElementsByClassName("greet");
+            for(var i = 0; i < x.length; i++) {
+                x[i].style.display = "none";
+            }
+            
+            hPos++;
+            
+            if (hPos > x.length) {
+                hPos = 1;
+            }
+            
+            x[hPos-1].style.display = "block";
+            setTimeout(display, 3000);
+        }
+    
+    
+    </script>
 
 
 </body>

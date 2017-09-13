@@ -10,7 +10,7 @@
     
     .greet {
         color: white;
-        font-size: 50px;
+        font-size: 40px;
         font-family: helvetica;
         position: absolute;
         left: 50%;
@@ -85,7 +85,7 @@
 </style>
 
 <body>
-    <h1 class="greet">Try not to forget next time.</h1>
+    <h1 class="greet" id="gre"></h1>
     
 <form class="login">
     <img src="bitsPurple.png">
@@ -97,5 +97,21 @@
      <a class="fp" href="login.html">Log in</a>
 
     </form>
+    
+    <script>
+    
+    var greeting = ["God gave us memory so that we might have roses in December.","Memory is a fragile thing.","No man has a good enough memory to be a successful liar.","Memory is the treasury and guardian of all things."];
+    
+        var index = Math.floor(Math.random() * greeting.length);
+        
+        document.getElementById("gre").innerHTML = greeting[index];
+        
+    
+    </script>
         
 </body>
+
+
+<!--
+Memory Quotes
+Read more at: https://www.brainyquote.com/quotes/keywords/memory.html-->
