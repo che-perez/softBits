@@ -63,16 +63,13 @@
     .pic {
         width: 300px;
         position: relative;
-        border: 2px solid rgb(150,225,80);
         top: 30px;
         left: -500px;
         transform: rotate(-25deg);
-        box-shadow: 2px 2px 2px rgba(0,0,0,.5);
     }
     .picR {
-        width: 250px;
+        width: 300px;
         position: relative;
-        border: 2px solid rgb(41,200,255);
         top: -150px;
         right: -500px;
         transform: rotate(25deg);
@@ -166,7 +163,7 @@ function left() {
         var pos = -500;
         var i = setInterval(frame, 2);
     function frame() {
-        if(pos == 50) {
+        if(pos == 100) {
         clearInterval(i);
             pic2 = 1;
             
