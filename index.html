@@ -18,9 +18,10 @@
             }
                 
             .head {
-                background-color: rgb(0,200,255);
-                width: 100%;
-                height: 500px;
+                background-image: url(retail1.jpg);
+                background-size: cover;
+                background-position: center;
+                height: 600px;
             }
             
             nav {
@@ -83,7 +84,7 @@
                 position: relative;
                 top: 75px;
                 left: 25%;
-                box-shadow: 2px 2px 2px 2px rgba(0,0,0,.5);
+/*                box-shadow: 2px 2px 2px 2px rgba(0,0,0,.5);*/
             }
             
             .btn {
@@ -113,6 +114,34 @@
                 box-shadow: none;
             }
             
+            .heading {
+                font-family: helvetica;
+                font-size: 50px;
+                position: relative;
+                top: 40%;
+                left: 20%;
+                color: white;
+            }
+            .hbtn {
+                width: 200px;
+                height: 25px;
+                background-color: rgb(150,225,80);
+                border-radius: 10px;
+                position: relative;
+                top: 55%;
+                left: 25%;
+                text-align: center;
+                font-size: 20px;
+                padding: 10px 0px;
+                box-shadow: 2px 2px 2px rgba(255,255,255,.5);
+            }
+            .hbtn a{
+                display: block;
+                color: white;
+                text-shadow: 2px 2px 2px rgba(0,0,0,.5);
+                text-decoration: none;
+            }
+            
             footer {
                 width: 100%;
                 height: 300px;
@@ -139,14 +168,22 @@
             </nav>
             
             <div class="head">
+                <h1 class="heading">What is a POS System?</h1>
+                <div class="hbtn" type="button"><a href="about.html"><p>Learn More..</p></a></div>
              </div>
+            <div class="head">
+                <h1 class="heading">Slide2</h1>
+            </div>
+            <div class="head">
+                <h1 class="heading">Slide3</h1>
+            </div>
             
         </header>
         
         <section>
             
             <div class="flex">
-                <div id="d1"><h2 class="frontH">Hola Mundo</h2><img class="frontIm" placeholder="placeholder"><div class="btn" type="button"><a href="test.html"><p>Click Me!!</p></a></div></div>
+                <div id="d1"><h2 class="frontH">POS Systems?</h2><img class="frontIm" src="about.png"><div class="btn" type="button"><a href="about.html"><p>Learn</p></a></div></div>
             <div class="line"></div>
                 <div id="d2"><h2 class="frontH">Hola Mundo</h2><img class="frontIm" placeholder="placeholder"><div class="btn" type="button"><a href="test2.html"><p>Click Me!!</p></a></div></div>
             <div class="line"></div>
@@ -165,6 +202,30 @@
         </footer>
     
     </body>
+    
+    <script>
+    
+        var hPos = 0;
+        display();
+        
+        function display() {
+            var x = document.getElementsByClassName("head");
+            for(var i = 0; i < x.length; i++) {
+                x[i].style.display = "none";
+            }
+            
+            hPos++;
+            
+            if (hPos > x.length) {
+                hPos = 1;
+            }
+            
+            x[hPos-1].style.display = "block";
+            setTimeout(display, 3000);
+        }
+    
+    
+    </script>
 
 
 </html>
