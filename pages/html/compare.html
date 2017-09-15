@@ -1,5 +1,14 @@
- <link rel="stylesheet" type="text/css" href="/pages/css/main.css">
+<!DOCTYPE html>
 
+<html>
+
+    <head>
+    
+        <meta charset="utf-8">
+        <title>Compare POS</title>
+        <link rel="stylesheet" type="text/css" href="/pages/css/main.css">
+        <link rel="stylesheet" type="text/css" href="/pages/css/modal.css">
+    </head>
 <style>
     
    .head {
@@ -16,7 +25,7 @@
         width: 400px;
         height: 400px;
         position: relative;
-        top: 40%;
+        top: 325px;
         left: 50%;
         transform: translateX(-50%) translateY(-50%);
         }
@@ -61,7 +70,7 @@
     <tbody>
         <tr>
             <td class="white">Pricing</td>
-            <td class="silver" id="soft">$1000/yr</td>
+            <td class="silver" id="soft">FREE 4 LIFE</td>
             <td class="white">$69/mn per register</td>
             <td class="silver">Free-$199/mn</td>
             <td class="white">$44-$299+/mn</td>
@@ -144,13 +153,37 @@
 </table>
 
 <!--https://www.merchantmaverick.com/pos-software-comparison-chart/-->
- <footer>
+ <div id="contact" class="modalDialog">
+	<div>
+        <div class="message">
+        <h3>Contact Us</h3>
+        
+        <form>
+            <input type="text" placeholder="Name">
+            <br/><br/>
+            <input type="email" placeholder="Email">
+            <br/><br/><br/>
+            <input id="m" type="text" placeholder="Meassage">
+            <br/><br/>
+            <div class="sbtn" type="button"><a href="#close" onclick="alert('Your message has been send')"><p>Send...</p></a></div>
+        
+        
+        </form>
+        </div>
+        
+	</div>
+</div>
+        
+        <footer>
             <a href="https://www.facebook.com/"><img class="social" src="/images/facebook.png"></a>
             <a href="https://twitter.com/"><img class="social" src="/images/twitter.png"></a>
             <a href="https://www.instagram.com/"><img class="social" src="/images/instagram.png"></a>
+            <center><p>&copy; 2017 Softbits</p></center>
+            <a class="c" href="#contact">Contact Us</a>
         </footer>
-
-
+    
+    
+<!-- Attempt to make the columns hide and show for more direct comparasion.
 <script>
 
 function visible(){
@@ -164,4 +197,6 @@ function visible(){
     }
     }
 
-</script>
+</script>-->
+    
+</html>

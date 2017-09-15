@@ -7,6 +7,7 @@
         <meta charset="utf-8">
         <title>SoftBits</title>
         <link rel="stylesheet" type="text/css" href="/pages/css/main.css">
+        <link rel="stylesheet" type="text/css" href="/pages/css/modal.css">
     </head>
 
     <body>
@@ -31,7 +32,8 @@
                 <div class="hbtn" type="button"><a href="/pages/html/compare.html"><p>Learn More..</p></a></div>
             </div>
             <div class="head" style="background-image: url(/images/market1.jpg)">
-                <h1 class="heading">Slide3</h1>
+                <h1 class="heading">Down<span style="color: indigo">load...</span></h1>
+                <div class="hbtn" type="button"><a href="/pages/html/download.html"><p>Learn More..</p></a></div>
             </div>
             
         </header>
@@ -43,20 +45,47 @@
             <div class="line"></div>
                 <div id="d2"><h2 class="frontH">Compare</h2><img class="frontIm" src="/images/vs.png"><div class="btn" type="button"><a href="/pages/html/compare.html"><p>Learn</p></a></div></div>
             <div class="line"></div>
-            <div id="d3"><h2 class="frontH">Download</h2><img class="frontIm" src="/images/download.png"><div class="btn" type="button"><a href="#"><p>Learn</p></a></div></div>
+            <div id="d3"><h2 class="frontH">Download</h2><img class="frontIm" src="/images/download.png"><div class="btn" type="button"><a href="/pages/html/download.html"><p>Learn</p></a></div></div>
             </div>
             
         </section>
         </div>
         
+
+<div id="contact" class="modalDialog">
+	<div>
+        <div class="message">
+        <h3>Contact Us</h3>
+        
+        <form>
+            <input type="text" placeholder="Name">
+            <br/><br/>
+            <input type="email" placeholder="Email">
+            <br/><br/><br/>
+            <input id="m" type="text" placeholder="Meassage">
+            <br/><br/>
+            <div class="sbtn" type="button"><a href="#" onclick="alert('Your message has been send.')"><p>Send...</p></a></div>
+        
+        
+        </form>
+        </div>
+        
+	</div>
+</div>
+        
         <footer>
             <a href="https://www.facebook.com/"><img class="social" src="images/facebook.png"></a>
             <a href="https://twitter.com/"><img class="social" src="images/twitter.png"></a>
             <a href="https://www.instagram.com/"><img class="social" src="images/instagram.png"></a>
+            <center><a href="SOFTBITS.pdf" target="_blank"><p>&copy; 2017 Softbits</p></a></center>
+            <a class="c" href="#contact">Contact Us</a>
         </footer>
     
     </body>
     
+    
+    
+<!--    Function to slides trough the headers.-->
     <script>
     
         var hPos = 0;
