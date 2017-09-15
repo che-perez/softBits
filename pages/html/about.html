@@ -1,8 +1,6 @@
+ <link rel="stylesheet" type="text/css" href="/pages/css/main.css">
+
 <style>
- 
-    *{
-        margin: 0;
-    }
     
     html {
         background-color: rgb(48,48,48);
@@ -10,7 +8,7 @@
     }
     
     .head {
-        background-image: url(retail1.jpg);
+        background-image: url(/images/retail1.jpg);
        background-size: cover;
        background-position: center;
         height: 600px;
@@ -85,18 +83,19 @@
         background-color: silver;
     }
 
-    footer {
-                width: 100%;
-                height: 300px;
-                background-color:dimgray;
-                z-index: -1;
-            }
-
 </style>
 
 <html>
 
 <body>
+    <a href="/index.html"><img class="minnie" src="/images/minnie.png"></a>
+     <nav>
+                <ul>
+                <li><div class="lbtn" type="button"><a href="signup.html"><p>Sign up</p></a></div></li>
+                <li>|</li>
+                <li><div class="lbtn" type="button"><a href="login.html"><p>Log in</p></a></div></li>
+                </ul>
+            </nav>
 
     <div class="head">
         <div class="quote">
@@ -107,26 +106,23 @@
     
     <div class="column">
         <div class="rows" id="r1" onmouseover="left()">
-            <img  class="pic" id="pic1" src="bitsPurple.png">
+            <img  class="pic" id="pic1" src="/images/bitsPurple.png">
             <p class="rT"><b>What is POS?</b> POS stands for point of sale, which refers to the time and place - the point - that a sales transaction is completed. POS may also stand for point of service, or the time when customers interact with merchants, or point of purchase, or a place where sales are made, whether at a mall, market, city, or restauranty. </p></div>
         <div class="rows" id="r2" onmouseover="right()">
             <p class="lT">POS systems are much more complex than traditional cash registers because they can capture customer data, report employee productivity, and even manage inventory. Over time, modern cloud-based POS systems have displaced traditional computer POS systems because of their ability to access all data online in real-time. </p>
-            <img  class="picR" id="pic2" src="cloud.png">
+            <img  class="picR" id="pic2" src="/images/cloud.png">
         </div>
         <div class="rows" id="r3" onmouseover="izq()">
-            <img  class="pic" id="pic3" src="tag.png">
+            <img  class="pic" id="pic3" src="/images/tag.png">
             <p class="rT">Businesses are increasingly adopting POS systems, and one of the most obvious and compelling reasons is that a POS system does away with the need for price tags. Selling prices are linked to the product code of an item when adding stock, so the cashier merely needs to scan this code to process a sale. If there is a price change, this can also be easily done through the inventory window. Other advantages include the ability to implement various types of discounts, a loyalty scheme for customers, and more efficient stock control.</p></div>
         
 <!--    https://pos.toasttab.com/what-is-pos-->
         
     </div>
-    
-    <footer>
-            <a href="https://www.facebook.com/">FaceBook</a>
-            <a href="https://twitter.com/">Twitter</a>
-            <a href="https://www.instagram.com/">Instagram</a>
-            
-            
+   <footer>
+            <a href="https://www.facebook.com/"><img class="social" src="/images/facebook.png"></a>
+            <a href="https://twitter.com/"><img class="social" src="/images/twitter.png"></a>
+            <a href="https://www.instagram.com/"><img class="social" src="/images/instagram.png"></a>
         </footer>
     
 </body>

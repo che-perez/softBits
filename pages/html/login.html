@@ -5,12 +5,12 @@
     }
     
     body {
-        background-color: rgb(150,225,80);
+        background-color: rgb(41,200,255);
     }
     
     .greet {
         color: white;
-        font-size: 40px;
+        font-size: 50px;
         font-family: helvetica;
         position: absolute;
         left: 50%;
@@ -54,7 +54,7 @@
         left: 100px;
         width: 300px;
         height: 30px;
-        background-color: indigo;
+        background-color: rgb(150,225,80);
         border-radius: 5px;
     }
     .logbt a {
@@ -68,7 +68,7 @@
     
     .sg {
         position: inherit;
-        color: indigo;
+        color: rgb(150,225,80);
         text-decoration: none;
         top: 85%;
         left: 70%;
@@ -76,42 +76,28 @@
     
     .fp {
         position: inherit;
-        color: indigo;
+        color: rgb(150,225,80);
         text-decoration: none;
         top: 85%;
-        right: 70%;
+        right: 60%;
         }
 
 </style>
 
 <body>
-    <h1 class="greet" id="gre"></h1>
+    <h1 class="greet">Good to see you Again!</h1>
     
 <form class="login">
-    <img src="bitsPurple.png">
-<br/><br/>
+    <img src="/images/bitsGreen.png">
+
 <input type="email"  placeholder=" Email address">
+    <br/><br/>
+<input type="password"  placeholder=" Password">
     
-    <div class="logbt" type="button"><a href="index.html" onclick="alert('Your recovery email has been send.')"><p>Recover</p></a></div>
+    <div class="logbt" type="button"><a href="index.html" onclick="alert('You have sucessfully loged in.')"><p>Log in</p></a></div>
     <a class="sg" href="signup.html">Sign up</a>
-     <a class="fp" href="login.html">Log in</a>
+     <a class="fp" href="forgot.html">Forgot Password?</a>
 
     </form>
-    
-    <script>
-    
-    var greeting = ["God gave us memory so that we might have roses in December.","Memory is a fragile thing.","No man has a good enough memory to be a successful liar.","Memory is the treasury and guardian of all things."];
-    
-        var index = Math.floor(Math.random() * greeting.length);
-        
-        document.getElementById("gre").innerHTML = greeting[index];
-        
-    
-    </script>
         
 </body>
-
-
-<!--
-Memory Quotes
-Read more at: https://www.brainyquote.com/quotes/keywords/memory.html-->
