@@ -15,7 +15,7 @@
     }
 
     .head {
-        background-image: url(/images/retail1.jpg);
+        background-image: url(../images/retail1.jpg);
         background-size: cover;
         background-position: center;
         height: 600px;
